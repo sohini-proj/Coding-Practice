@@ -113,6 +113,7 @@ while True:
             print(listman[0])
             listman.pop(0)
     print("\n")
+    print("Original word: ",word)
     ch=input("Wanna go again?: ")
     print("\n")
     if ch=="n":

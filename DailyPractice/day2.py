@@ -152,6 +152,8 @@ for i in range(0,num):
     i+=1
 print(f"The largest score is {max}")
 '''
+# fizzbuzz
+'''
 for i in range(1,101):
     if i%3==0 and i%5==0:
         print("FizzBuzz")
@@ -161,5 +163,20 @@ for i in range(1,101):
         print("Fizz")
     else:
         print(i)
+'''
 
+# FUNCTIONS
+# area of a rectangle
+def rectarea(x,y):
+    print(f"AREA = {x*y}")
+rectarea(3,4)
 
+# reverse string
+s="Alice in Wonderland"
+
+def rev(s):
+    s2=""
+    for i in range(len(s)-1,-1,-1):
+        s2+=s[i]
+    print(s2)
+rev(s)

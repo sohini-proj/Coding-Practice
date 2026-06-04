@@ -20,6 +20,7 @@ def mult(a,b):
     return a*b
 def div(a,b):
     return a/b
+operators={"+":add,"-":sub,"*":mult,"/":div}
 while True:
     print("\n")
     print("OPERATIONS :\n1. ADD (+)\n2. SUBTRACT (-)\n3. MULTIPLY (*)\n4. Divide (/)")
@@ -29,16 +30,9 @@ while True:
     b=float(input("Enter Number 2: "))
     print("\n")
     op=input("Enter operation( +, -, * or /): ")
-    if op=="+":
-        print(a,op,b,"=",add(a,b),sep=" ")
-    elif op=="-":
-        print(a,op,b,"=",sub(a,b),sep=" ")
-    elif op=="*":
-        print(a,op,b,"=",mult(a,b),sep=" ")
-    elif op=="/":
-        print(a,op,b,"=",div(a,b),sep=" ")
-    else:
-        print("INVALID INPUT")
+    print("\n")
+    if op in operators:
+        print(f" {a} {op} {b} = {operators[op](a,b)}")
     print("\n")
     ch=input("Wanna go again?(y/n): ")
     if ch=="n":

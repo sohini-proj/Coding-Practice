@@ -117,8 +117,9 @@ print(res)
 '''
 
 
-# changing a global variable in local scope
-
+# changing a global variable in local scope. achieved using global keyword
+# not highly recommended to reduce risk of bugs and errors
+'''
 a=5
 def inc():
     global a
@@ -126,3 +127,4 @@ def inc():
     print(a)
 inc()
 print(a)
+'''

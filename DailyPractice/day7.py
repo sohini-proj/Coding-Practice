@@ -11,6 +11,10 @@ print(dice_num)
 # Generation identification
 '''
 def generation(year):
+    if year in range(1883,1901):
+        return "belong to the Silent Generation"
+    if year in range(1901,1928):
+        return "belong to the Silent Generation"
     if year in range(1928,1946):
         return "belong to the Silent Generation"
     if year in range(1946,1965):
@@ -66,6 +70,7 @@ while True:
 # catching exceptions with "try" and "except" blocks
 
 # Voting eligibility checker
+'''
 while True:
     print()
     while True:
@@ -75,7 +80,7 @@ while True:
         # except block only executes if error has occured
         except ValueError:
             print("Invalid Input. Try entering a numerical value such as 18. \n")
-            
+
     if age>=18:
         print("\nYou are eligible to vote\n")
     else:
@@ -83,3 +88,85 @@ while True:
     ch=input("Another try?(y/n): ")
     if ch=="n":
         break
+'''
+
+# DEBUGGING
+
+# Excercise_1: Odd or Even
+
+#def odd_or_even(number):
+#   if number % 2 = 0:
+#       return "This is an even number."
+#   else:
+#       return "This is an odd number."
+
+'''
+def odd_or_even(number):
+    if number % 2 == 0:
+        return "This is an even number."
+    else:
+        return "This is an odd number."
+while True:
+    print()
+    num=float(input("enter number: "))
+    print()
+    print(odd_or_even(num))
+    print()
+    ch=input("Do you wanna go again?(y/n): ")
+    if ch=="n":
+        break
+'''
+
+# Excercise_2: 
+
+#def is_leap(year):
+#   if year % 4 == 0:
+#       if year % 100 == 0:
+#           if year % 4000 == 0:
+#               return True
+#           else:
+#               return False
+#       else:
+#           return True
+#   else:
+#       return False
+'''
+def is_leap(year):
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    else:
+        return False
+print(is_leap(2000))
+'''
+
+# Excercise_3:
+# Target is the number up to which we count
+#def fizz_buzz(target):
+#   for number in range(1, target + 1):
+#       if number % 3 == 0 or number % 5 == 0:
+#           print("FizzBuzz")
+#       if number % 3 == 0:
+#           print("Fizz")
+#       if number % 5 == 0:
+#           print("Buzz")
+#       else:
+#           print([number])
+
+# Target is the number up to which we count
+'''
+def fizz_buzz(target):
+    for number in range(1, target + 1):
+        if number % 3 == 0 and number % 5 == 0:
+            print("FizzBuzz")
+        elif number % 3 == 0:
+            print("Fizz")
+        elif number % 5 == 0:
+            print("Buzz")
+        else:
+            print(number)
+fizz_buzz(10)
+'''

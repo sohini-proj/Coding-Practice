@@ -27,6 +27,7 @@ __________|     ___)______
 ----------(______)
 
 '''
+game=[rock,paper,scissor]
 while True:
     print("\n")
     print("!!! WELCOME TO PYTHON ROCK PAPER SCISSOR !!!")

@@ -1,5 +1,4 @@
 import copy
-# water(ml), milk(ml), coffee(g)
 
 recipe={
     "espresso":[50,0,18],
@@ -12,9 +11,6 @@ price={
     "latte":2.50,
     "cappuccino":3.00
 }
-
-
-stock_list=[]
 
 stock={
     "water":1250,

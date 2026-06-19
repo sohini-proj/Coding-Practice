@@ -1,13 +1,13 @@
-'''
-print("Day one of documented practice!")
 
+print("Day one of documented practice!")
+'''
 #type casting to boolean 1=True, 0=False
 print(bool(1))
 
 #type casting to determine number of letters in a name
 print("num of letters in ur name: "+str(len(input("enter ur first name: "))))
-
-
+'''
+'''
 #program to calculate, round(to 2 decimal places) and display bmi USING F-STRING
 h=float(input("enter height in meters: "))
 w=float(input("enter weight in kgs: "))
@@ -20,7 +20,8 @@ per=float(input("tip percentage(10%/12%/15%): "))
 n=int(input("Enter number of people: "))
 amt = (bill+(bill*(per/100)))/n
 print("each person pays: ",amt)
-
+'''
+'''
 #amusement park ticket price calculator
 #first checks height then age then whether or not they want a picture
 h=float(input("enter height in cm: "))
@@ -41,7 +42,8 @@ else:
         p+=3
 
 print("amt to pay with 10% tax: $",p+(p*0.1))
-
+'''
+'''
 #pizza order system S,M,L=$15,$20,$25; toppings:cost extra;
 while True:
     print("!!! WELCOME TO PYTHON PIZZA DELIVERY EXPRESS !!!")
@@ -87,3 +89,4 @@ while True:
 import random
 numero=random.randint(5,10)
 print(numero)
+

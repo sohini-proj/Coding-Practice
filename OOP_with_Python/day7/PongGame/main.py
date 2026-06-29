@@ -11,13 +11,15 @@ screen.listen()
 
 score = Score()
 boundary=Boundary()
-ball=Ball(boundary)
 
 comp = Paddle((-390,20), "black")
 player = Paddle((380,20), "blue")
 
+ball=Ball(boundary, comp, player,score)
+
 screen.onkey(player.up, "Up")
 screen.onkey(player.down, "Down")
+
 
 screen.tracer(0)
 
